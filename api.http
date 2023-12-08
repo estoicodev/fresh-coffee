@@ -1,0 +1,24 @@
+### Get all categories
+GET http://localhost:3000/api/categories
+
+### Get all orders
+GET http://localhost:3000/api/orders
+
+### Create a new order
+POST http://localhost:3000/api/orders
+content-type: application/json
+
+{
+  "name": "John Doe",
+  "total": 100,
+  "order": [
+    {
+      "product_id": 1,
+      "quantity": 2
+    },
+    {
+      "product_id": 2,
+      "quantity": 1
+    }
+  ]
+}
